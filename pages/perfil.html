@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/perfil.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <a class="navbar-brand" href="#">
+        <img src="../img/logo.png" alt="Logo" height="40" class="mr-2" />
+        <span class="font-weight-bold">PERFIL</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavProfile"
+        aria-controls="navbarNavProfile"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavProfile"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../tienda.html">TIENDA</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">AYUDA</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./biblioteca.html">BIBLIOTECA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Cerrar sesion</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container py-4">
+      <!-- Tarjeta de Perfil -->
+      <div class="card mb-4 p-3 p-md-4 mx-auto" style="max-width: 800px">
+        <div class="card-body p-0">
+          <div class="profile-info">
+            <img src="../img/perfil-foto.jpeg" alt="Foto de perfil" />
+            <div class="container">
+              <div class="container">
+                <h5 style="font-size: 1.2rem; font-weight: bold">Ginrai_12</h5>
+                <p class="mb-1">Ricardo</p>
+                <p class="mb-1">Manabí, Ecuador</p>
+              </div>
+
+              <img src="../img/perfil-ec.png" alt="Ecuador" class="flag" />
+              <button class="btn-profile">Modificar perfil</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="section-title mx-auto"
+        style="
+          max-width: 800px;
+          background-color: rgba(93, 102, 116, 0.8);
+          color: rgba(83, 158, 217, 1);
+        "
+      >
+        EN LÍNEA
+      </div>
+
+      <h4 class="mb-3 mx-auto" style="max-width: 800px">Actividad reciente</h4>
+
+      <div
+        class="activity-card mx-auto"
+        style="max-width: 800px; background-color: rgba(93, 102, 116, 0.8)"
+      >
+        <img src="../img/perfil-card-1.png" alt="Fallout New Vegas" />
+        <div class="activity-card-content">
+          <h5>Fallout New Vegas</h5>
+          <p>
+            Horas de juego en total: 24 horas en total.<br />
+            Logros conseguidos: 30 logros de 100 en total.
+          </p>
+          <button
+            class="btn btn-sm"
+            style="background-color: rgba(87, 138, 188, 0.8)"
+          >
+            Más información
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="activity-card mx-auto"
+        style="max-width: 800px; background-color: rgba(93, 102, 116, 0.8)"
+      >
+        <img
+          src="../img/perfil-card-2.png"
+          alt="Devil May Cry 5: Special Edition"
+        />
+        <div class="activity-card-content">
+          <h5>Devil May Cry 5: Special Edition</h5>
+          <p>
+            Horas de juego en total: 40,5 horas en total.<br />
+            Logros conseguidos: 38 logros de 55 en total.
+          </p>
+          <button
+            class="btn btn-sm"
+            style="background-color: rgba(87, 138, 188, 0.8)"
+          >
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de Sesión</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- SweetAlert2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+  </head>
+  <body style="background-color: #0f0f0f">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3" id="navbar">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="../img/logo.png" alt="Logo" height="40" class="mr-2" />
+        <span class="font-weight-bold">LEGENDARYGAMES</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">AYUDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="./registro.html">REGISTRARSE</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">INICIAR SESIÓN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- VISTA PC (md en adelante) -->
+    <div
+      class="container vh-100 d-none d-md-flex justify-content-center align-items-center"
+    >
+      <div
+        class="card border-0 p-4"
+        style="background-color: #5a5a5a; border-radius: 20px; width: 480px"
+      >
+        <div class="text-center mb-4">
+          <img src="../img/logo.png" alt="Logo Epic" style="height: 100px" />
+        </div>
+        <h2
+          class="text-center mb-4"
+          style="color: #fff; font-size: 1.5rem; font-weight: bold"
+        >
+          Iniciar sesión
+        </h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label style="color: #ccc; font-size: 0.9rem"
+              >Dirección de correo electrónico</label
+            >
+            <input
+              type="email"
+              id="emailInput"
+              class="form-control border-0"
+              style="background-color: #2a2a2a; color: #fff"
+              placeholder="correo@ejemplo.com"
+            />
+          </div>
+          <div class="form-group position-relative">
+            <label style="color: #ccc; font-size: 0.9rem">Contraseña</label>
+            <input
+              type="password"
+              id="passwordInput"
+              class="form-control border-0"
+              style="background-color: #2a2a2a; color: #fff"
+              placeholder="Contraseña"
+            />
+            <span
+              class="position-absolute"
+              style="right: 10px; top: 40px; cursor: pointer"
+            >
+              <!-- Ícono ojo SVG -->
+              <svg width="20" height="20" fill="#ccc" viewBox="0 0 16 16">
+                <path
+                  d="M8 3c-3.5 0-6.5 2.5-7.7 4.5-.2.3-.2.7 0 1C1.5 10.5 4.5 13 8 13s6.5-2.5 7.7-4.5c.2-.3.2-.7 0-1C14.5 5.5 11.5 3 8 3zM8 11c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"
+                />
+                <circle cx="8" cy="8" r="1.5" />
+              </svg>
+            </span>
+          </div>
+          <div class="mb-3">
+            <a href="#" style="color: #00aaff; font-size: 0.9rem"
+              >¿Has olvidado la contraseña?</a
+            >
+          </div>
+          <button
+            type="submit"
+            class="btn btn-block"
+            style="background-color: #333; color: #aaa; border: none"
+          >
+            Iniciar sesión
+          </button>
+        </form>
+        <hr class="my-4" style="border-color: #333" />
+        <div class="text-center text-muted mb-2" style="font-size: 0.9rem">
+          o iniciar sesión con
+        </div>
+        <div class="row text-center mb-4 justify-content-center">
+          <div class="col-auto">
+            <img
+              src="../img/facebook.png"
+              alt="Facebook"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                background-color: #1a1a1a;
+              "
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="../img/google.png"
+              alt="Google"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                background-color: #1a1a1a;
+              "
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="../img/x.png"
+              alt="X"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                background-color: #1a1a1a;
+              "
+            />
+          </div>
+        </div>
+
+        <div class="text-center" style="font-size: 0.9rem">
+          <a href="#" style="color: #00aaff; display: block; margin-bottom: 5px"
+            >Crear una cuenta</a
+          >
+          <a href="#" style="color: #00aaff">Política de privacidad</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- VISTA MÓVIL -->
+    <div class="container py-4 d-block d-md-none">
+      <div class="text-center mb-2">
+        <h1 style="font-size: 1.5rem; font-weight: bold; color: #fff">
+          LEGENDARY GAMES
+        </h1>
+      </div>
+      <div class="text-center mb-3">
+        <img src="../img/logo.png" alt="Logo Epic" style="height: 100px" />
+      </div>
+      <div
+        class="card border-0 p-3 mx-auto"
+        style="background-color: #5a5a5a; border-radius: 10px; max-width: 320px"
+      >
+        <form id="loginFormMobile">
+          <div class="form-group">
+            <label style="color: #ccc; font-size: 0.9rem">Usuario/correo</label>
+            <input
+              type="email"
+              id="emailInputMobile"
+              class="form-control border-0"
+              style="background-color: #2a2a2a; color: #fff"
+              placeholder="Sample"
+            />
+          </div>
+          <div class="form-group">
+            <label style="color: #ccc; font-size: 0.9rem">Contraseña</label>
+            <input
+              type="password"
+              id="passwordInputMobile"
+              class="form-control border-0"
+              style="background-color: #2a2a2a; color: #fff"
+              placeholder="Sample"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-block"
+            style="background-color: #333; color: #aaa; border: none"
+          >
+            Iniciar sesión
+          </button>
+        </form>
+        <div class="text-center mt-3">
+          <a href="#" style="color: #00aaff; font-size: 0.9rem"
+            >¿Olvidó su contraseña?</a
+          >
+        </div>
+        <hr class="my-4" style="border-color: #333" />
+        <div class="text-center text-muted mb-2" style="font-size: 0.9rem">
+          O iniciar sesión con:
+        </div>
+        <div class="row text-center mb-4 justify-content-center">
+          <div class="col-auto">
+            <img
+              src="../img/facebook.png"
+              alt="Facebook"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                background-color: #1a1a1a;
+              "
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="../img/google.png"
+              alt="Google"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                background-color: #1a1a1a;
+              "
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="../img/x.png"
+              alt="X"
+              style="
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                background-color: #1a1a1a;
+              "
+            />
+          </div>
+        </div>
+
+        <div class="text-center" style="font-size: 0.9rem">
+          <span class="text-muted">¿No tienes una cuenta hecha?</span><br />
+          <a href="#" style="color: #00aaff">Regístrate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Script para manejar el login -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const formDesktop = document.getElementById("loginForm");
+        const formMobile = document.getElementById("loginFormMobile");
+
+        // Función para validar en XML
+        async function validarUsuario(email, password) {
+          const response = await fetch("../xml/users.xml");
+          const text = await response.text();
+          const parser = new DOMParser();
+          const xmlDoc = parser.parseFromString(text, "application/xml");
+
+          const users = xmlDoc.getElementsByTagName("user");
+          for (let i = 0; i < users.length; i++) {
+            const userEmail =
+              users[i].getElementsByTagName("email")[0].textContent;
+            const userPassword =
+              users[i].getElementsByTagName("password")[0].textContent;
+            if (userEmail === email && userPassword === password) {
+              return true;
+            }
+          }
+          return false;
+        }
+
+        async function handleLogin(event, emailSelector, passwordSelector) {
+          event.preventDefault();
+          const email = document.getElementById(emailSelector).value.trim();
+          const password = document
+            .getElementById(passwordSelector)
+            .value.trim();
+
+          const valido = await validarUsuario(email, password);
+          if (valido) {
+            // Alerta de éxito con SweetAlert2
+            Swal.fire({
+              title: "¡Bienvenido!",
+              text: "Has iniciado sesión exitosamente",
+              icon: "success",
+              confirmButtonText: "Aceptar",
+            }).then(() => {
+              // Redirige a perfil.html después de cerrar la alerta
+              window.location.href = "../pages/perfil.html";
+            });
+          } else {
+            // Alerta de error con SweetAlert2
+            Swal.fire({
+              title: "Error",
+              text: "Credenciales incorrectas. Intenta de nuevo.",
+              icon: "error",
+              confirmButtonText: "Aceptar",
+            });
+          }
+        }
+
+        if (formDesktop) {
+          formDesktop.addEventListener("submit", (e) =>
+            handleLogin(e, "emailInput", "passwordInput")
+          );
+        }
+
+        if (formMobile) {
+          formMobile.addEventListener("submit", (e) =>
+            handleLogin(e, "emailInputMobile", "passwordInputMobile")
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

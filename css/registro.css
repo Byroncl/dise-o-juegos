@@ -1,0 +1,86 @@
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #5a5a5a;
+  border-radius: 10px;
+}
+
+.card label {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.form-control {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: none;
+}
+
+.error-text {
+  color: #ff5555;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.checkbox-container {
+  margin-bottom: 15px;
+}
+
+.checkbox-container label {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.btn-register {
+  background-color: #333;
+  color: #aaa;
+  border: none;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btn-register:disabled {
+  cursor: not-allowed;
+  background-color: #444;
+}
+
+.link-text {
+  color: #00aaff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del título */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 20px;
+}
+
+.checkbox-container label {
+  margin-left: auto;
+}

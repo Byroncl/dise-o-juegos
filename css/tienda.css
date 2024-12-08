@@ -1,0 +1,102 @@
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #bbb;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.section-title a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.section-title a:hover {
+  text-decoration: underline;
+}
+
+.card-game {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  margin-right: 15px;
+  flex-shrink: 0; /* Para que no se estrechen */
+}
+
+.card-game img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-game-body {
+  padding: 10px;
+}
+
+.card-game-title {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.card-game-price {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* Ajustes responsive: en escritorio, mostrar varias tarjetas a lo ancho sin scroll */
+@media (min-width: 768px) {
+  .horizontal-scroll {
+    overflow-x: visible;
+    flex-wrap: wrap;
+  }
+
+  .card-game {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Input de búsqueda y select */
+.search-bar {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.search-bar input {
+  background-color: #2a2a2a;
+  border: none;
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.search-bar select {
+  background-color: #2a2a2a;
+  border: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+  width: auto;
+}

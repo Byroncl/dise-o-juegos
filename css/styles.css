@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: #171515 !important;
+}
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.hero-section {
+    padding: 40px 60px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 80%;
+}
+
+.hero-subtitle .hero-link {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.hero-img-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.categories-intro {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.custom-card {
+    background-color: #394659;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.custom-card:hover {
+    transform: scale(1.02);
+}
+
+.custom-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.custom-card .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.custom-card .card-text {
+    font-size: 0.9rem;
+    color: #ccc;
+}

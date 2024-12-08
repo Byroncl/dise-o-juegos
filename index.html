@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Juegos</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3" id="navbar">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.png" alt="Logo" height="40" class="mr-2" />
+        <span class="font-weight-bold">LEGENDARYGAMES</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">INICIO</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">AYUDA</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/registro.html">REGISTRARSE</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/login.html">INICIAR SESIÓN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section container-fluid">
+      <div class="row align-items-center no-gutters">
+        <div class="col-md-7 hero-text pr-4">
+          <h1 class="hero-title">
+            Descubre todos los juegos que hay en nuestro catálogo
+          </h1>
+          <p class="hero-subtitle">
+            En nuestra página encontrarás diferentes tipos de videojuegos, desde
+            antiguos hasta los más nuevos. Y todo a buenos precios.<br />
+            <a href="#" class="hero-link">Únete a nosotros</a> para saber mucho
+            más.
+          </p>
+        </div>
+        <div class="col-md-5 text-center hero-img-col">
+          <img src="img/banner.png" alt="Banner" class="img-fluid hero-image" />
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="categories-intro">
+            Puedes encontrar diferentes categorías como:
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="container my-5">
+      <div class="row">
+        <!-- Tarjeta: Terror -->
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">TERROR</h5>
+            </div>
+            <img src="img/catalogo-4.png" class="card-img-top" alt="Terror" />
+          </div>
+        </div>
+        <!-- Tarjeta: De Peleas -->
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">DE PELEAS</h5>
+            </div>
+            <img
+              src="img/catalogo-3.png"
+              class="card-img-top"
+              alt="De Peleas"
+            />
+          </div>
+        </div>
+        <!-- Tarjeta: Acción -->
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">ACCIÓN</h5>
+            </div>
+            <img src="img/catalogo-2.png" class="card-img-top" alt="Acción" />
+          </div>
+        </div>
+        <!-- Tarjeta: Mundo Abierto -->
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">MUNDO ABIERTO</h5>
+            </div>
+            <img
+              src="img/catalogo-1.png"
+              class="card-img-top"
+              alt="Mundo Abierto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/tienda.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #171515;">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="../img/logo.png" alt="Logo" height="40" class="mr-2"/>
+    <span class="font-weight-bold">TIENDA</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavTienda"
+    aria-controls="navbarNavTienda" aria-expanded="false" aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavTienda">
+    <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./perfil.html">PERFIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tienda.html">TIENDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./biblioteca.html">BIBLIOTECA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">CERRAR SESIÓN</a>
+          </li>
+        </ul>
+  </div>
+</nav>
+
+<div class="container py-3">
+  <!-- Barra de búsqueda -->
+  <div class="search-bar">
+    <input type="text" placeholder="Buscar"/>
+    <select>
+      <option value="">Todo</option>
+      <option value="Nuevos">Nuevos</option>
+      <option value="Populares">Populares</option>
+      <option value="Ofertas">Ofertas</option>
+    </select>
+  </div>
+
+  <!-- Sección "Descubre los juegos del momento" -->
+  <div class="section-title">
+    Descubre los juegos del momento <a href="#">&#x3e;</a>
+  </div>
+  <!-- Contenedor horizontal scroll en móvil, grid en desktop -->
+  <div class="d-flex horizontal-scroll overflow-auto pb-2">
+    <!-- Tarjeta 1 -->
+     <div class="card-game">
+      <img src="../img/tienda-5.png" alt="Juego 3" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Título del Juego 3</div>
+        <div class="card-game-price">$39.99</div>
+      </div>
+    </div>
+    <div class="card-game">
+      <img src="../img/tienda-1.png" alt="Juego 1" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">DRAGON BALL! Sparking Zero</div>
+        <div class="card-game-price">$55.59</div>
+      </div>
+    </div>
+    <!-- Tarjeta 2 -->
+    <div class="card-game">
+      <img src="../img/tienda-2.png" alt="Juego 2" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Star Wars Outlaws</div>
+        <div class="card-game-price">$69.99</div>
+      </div>
+    </div>
+    <div class="card-game">
+      <img src="../img/tienda-7.png" alt="Juego 7" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Título del Juego 3</div>
+        <div class="card-game-price">$39.99</div>
+      </div>
+    </div>
+    <div class="card-game">
+      <img src="../img/tienda-8.png" alt="Juego 8" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Título del Juego 3</div>
+        <div class="card-game-price">$39.99</div>
+      </div>
+    </div>
+    <div class="card-game">
+      <img src="../img/tienda-2.png" alt="Juego 2" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Star Wars Outlaws</div>
+        <div class="card-game-price">$69.99</div>
+      </div>
+    </div>
+     <div class="card-game">
+      <img src="../img/tienda-4.png" alt="Juego 2" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Star Wars Outlaws</div>
+        <div class="card-game-price">$69.99</div>
+      </div>
+    </div>
+  </div>
+   
+
+  <!-- Sección "Ofertas y descuentos de la semana" -->
+  <div class="section-title mt-4">
+    Ofertas y descuentos de la semana <a href="#">&#x3e;</a>
+  </div>
+  <div class="d-flex horizontal-scroll overflow-auto pb-2">
+    <!-- Tarjeta 3 -->
+    <div class="card-game">
+      <img src="../img/tienda-3.png" alt="Juego 3" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Título del Juego 3</div>
+        <div class="card-game-price">$39.99</div>
+      </div>
+    </div>
+    <!-- Tarjeta 4 -->
+    <div class="card-game">
+      <img src="../img/tienda-4.png" alt="Juego 4" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Título del Juego 4</div>
+        <div class="card-game-price">$29.99</div>
+      </div>
+    </div>
+    <div class="card-game">
+      <img src="../img/tienda-5.png" alt="Juego 3" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Título del Juego 3</div>
+        <div class="card-game-price">$39.99</div>
+      </div>
+    </div>
+    <div class="card-game">
+      <img src="../img/tienda-6.png" alt="Juego 3" style="height: 200px;">
+      <div class="card-game-body">
+        <div class="card-game-title">Título del Juego 3</div>
+        <div class="card-game-price">$39.99</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

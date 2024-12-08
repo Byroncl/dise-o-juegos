@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <categories>
+        <category>
+            <name>TERROR</name>
+            <image>img/catalogo-4.png</image>
+            <description>Juegos de terror...</description>
+        </category>
+        <category>
+            <name>DE PELEAS</name>
+            <image>img/catalogo-3.png</image>
+            <description>Juegos de peleas...</description>
+        </category>
+        <category>
+            <name>ACCIÓN</name>
+            <image>img/catalogo-2.png</image>
+            <description>Juegos de acción...</description>
+        </category>
+        <category>
+            <name>MUNDO ABIERTO</name>
+            <image>img/catalogo-1.png</image>
+            <description>Juegos de mundo abierto...</description>
+        </category>
+    </categories>
+</root>

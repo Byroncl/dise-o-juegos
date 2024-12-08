@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/biblioteca.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #171515"
+    >
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="../img/logo.png" alt="Logo" height="40" class="mr-2" />
+        <span class="font-weight-bold">BIBLIOTECA</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavBiblioteca"
+        aria-controls="navbarNavBiblioteca"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavBiblioteca"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./perfil.html">PERFIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tienda.html">TIENDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./biblioteca.html">BIBLIOTECA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">CERRAR SESIÓN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- VISTA MÓVIL -->
+    <div class="mobile-view container py-3">
+      <div class="mobile-title">BIBLIOTECA</div>
+      <div class="tab-links">
+        <a href="#" class="active">TODOS</a>
+        <a href="#">FAVORITOS</a>
+      </div>
+      <div class="sort-bar">Ordenar por: Jugado recientemente &#x3e;</div>
+      <div class="row game-grid-mobile">
+        <div class="col-6">
+          <div class="game-card">
+            <img
+              src="../img/perfil-card-1.png"
+              alt="Juego 1"
+              style="height: 200px"
+            />
+            <div class="game-card-title">Devil May Cry 5: SE</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="game-card">
+            <img
+              src="../img/perfil-card-2.png"
+              alt="Juego 2"
+              style="height: 200px"
+            />
+            <div class="game-card-title">Fallout New Vegas</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="game-card">
+            <img
+              src="../img/tienda-2.png"
+              alt="Juego 3"
+              style="height: 200px"
+            />
+            <div class="game-card-title">Star Wars Outlaws</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="game-card">
+            <img
+              src="../img/tienda-1.png"
+              alt="Juego 4"
+              style="height: 200px"
+            />
+            <div class="game-card-title">Dragon Ball Spark.</div>
+          </div>
+        </div>
+        <!-- Agrega más según necesidades -->
+      </div>
+    </div>
+
+    <!-- VISTA ESCRITORIO -->
+    <div class="desktop-view container py-4">
+      <!-- Tabs de escritorio -->
+      <div class="desktop-tabs">
+        <a href="#" class="active">Todos</a>
+        <a href="#">Favoritos</a>
+        <button class="add-button">+</button>
+      </div>
+
+      <!-- Barra de orden -->
+      <div class="desktop-sort-bar d-flex align-items-center mb-4">
+        Ordenar por:
+        <span style="margin-left: 5px">Orden alfabético A-Z &#x3e;</span>
+        <div class="ml-auto d-flex align-items-center">
+          <!-- Opcional: iconos para cambiar vista (grid o lista) -->
+          <div class="mr-3" style="cursor: pointer">&#x25A3;</div>
+          <div style="cursor: pointer">&#x2630;</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row game-grid-desktop">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="game-card">
+                <img
+                  src="../img/perfil-card-1.png"
+                  alt="Juego 1"
+                  style="height: 150px"
+                />
+                <div class="game-card-title">Devil May Cry 5: SE</div>
+                <div style="font-size: 0.8rem; color: #ccc">Instalar</div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="game-card">
+                <img
+                  src="../img/perfil-card-2.png"
+                  alt="Juego 2"
+                  style="height: 150px"
+                />
+                <div class="game-card-title">Fallout New Vegas</div>
+                <div style="font-size: 0.8rem; color: #ccc">Instalar</div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="game-card">
+                <img
+                  src="../img/tienda-2.png"
+                  alt="Juego 3"
+                  style="height: 150px"
+                />
+                <div class="game-card-title">Star Wars Outlaws</div>
+                <div style="font-size: 0.8rem; color: #ccc">Instalar</div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="game-card">
+                <img
+                  src="../img/tienda-1.png"
+                  alt="Juego 4"
+                  style="height: 150px"
+                />
+                <div class="game-card-title">Dragon Ball Spark.</div>
+                <div style="font-size: 0.8rem; color: #ccc">Instalar</div>
+              </div>
+            </div>
+
+            <!-- Agrega más tarjetas según necesites -->
+          </div>
+        </div>
+
+        <div class="col-md-3 filters-section">
+          <h5>Filtros</h5>
+          <input type="text" placeholder="Título" />
+          <div class="filter-category">
+            <strong>Instalados</strong><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Todos</a
+            ><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Instalados</a
+            >
+          </div>
+          <div class="filter-category">
+            <strong>Género</strong><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Acción</a
+            ><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Aventura</a
+            >
+          </div>
+          <div class="filter-category">
+            <strong>Funciones</strong><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Multijugador</a
+            ><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Cooperativo</a
+            >
+          </div>
+          <div class="filter-category">
+            <strong>Tipos</strong><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Base</a
+            ><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >DLC</a
+            >
+          </div>
+          <div class="filter-category">
+            <strong>Plataforma</strong><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >PC</a
+            ><br />
+            <a
+              href="#"
+              style="color: #bbb; font-size: 0.9rem; text-decoration: none"
+              >Consola</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
